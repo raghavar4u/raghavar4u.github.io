@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Raghavendra Reddy Thummala - Tech Lead Portfolio</title>
+    <meta name="description" content="Tech Lead specializing in Data Engineering, AI/ML, and Digital Transformation with 12+ years experience">
+    <!-- Mobile-optimized meta tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#00D4FF">
+    <link rel="stylesheet" href="Frontend/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+        <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <div class="logo-icon">
+                        <span class="logo-text">RR</span>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active" data-tab="home">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-tab="about">
+                            <i class="fas fa-user"></i> About Me
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link" data-tab="projects">
+                            <i class="fas fa-briefcase"></i> Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link" data-tab="blog">
+                            <i class="fas fa-blog"></i> Articles
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-tab="contact">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link" data-tab="resume">
+                            <i class="fas fa-file-alt"></i> Resume
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#media" class="nav-link" data-tab="media">
+                            <i class="fas fa-play-circle"></i> Media
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="tab-content active">
+            <div class="hero-section">
+                <div class="hero-bg-pattern"></div>
+                <div class="hero-content">
+                    <div class="hero-text animate__animated animate__fadeInLeft">
+                        <div class="hero-badge">
+                            <i class="fas fa-code"></i>
+                            <span>Tech Leadership</span>
+                        </div>
+                        <h1>Welcome to My Portfolio</h1>
+                        <h2 class="gradient-text">Raghavendra Reddy Thummala</h2>
+                        <h3 class="typing-text">Tech Lead (Data, AI/ML)</h3>
+                        <p class="hero-description">
+                            With over 12 years of experience in Data Engineering, AI/ML, and Technology Leadership, 
+                            I specialize in building scalable data solutions and driving digital transformation initiatives.
+                        </p>
+                        <div class="hero-stats">
+                            <div class="stat-card highlight-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h4 class="counter" data-target="12">12</h4>
+                                    <span class="plus-sign">+</span>
+                                    <p>Years Experience</p>
+                                </div>
+                            </div>
+                            <div class="stat-card highlight-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h4 class="counter" data-target="15">15</h4>
+                                    <span class="plus-sign">+</span>
+                                    <p>Projects</p>
+                                </div>
+                            </div>
+                            <div class="stat-card highlight-card">
+                                <div class="stat-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h4 class="specialist-text">Data & AI/ML</h4>
+                                    <p>Specialist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <button class="btn-primary gradient-btn" data-tab="projects">
+                                <i class="fas fa-briefcase"></i>
+                                <span>View Portfolio</span>
+                            </button>
+                            <button class="btn-secondary glass-btn" data-tab="contact">
+                                <i class="fas fa-envelope"></i>
+                                <span>Get In Touch</span>
+                            </button>
+                            <button class="btn-linkedin" onclick="window.open('https://www.linkedin.com/in/raghavar4u/', '_blank')">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-image animate__animated animate__fadeInRight">
+                        <div class="profile-container">
+                            <div class="profile-bg-shape"></div>
+                            <img src="Frontend/assets/profile.jpg" alt="Raghavendra Reddy Thummala" class="profile-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="tab-content">
+            <div class="about-container">
+                <!-- About Header -->
+                <div class="about-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>
+                                I'm Raghavendra Reddy Thummala, a passionate Tech Lead in Data & AI/ML with 12+ years of experience 
+                                in creating innovative digital solutions. My expertise spans across modern data technologies, 
+                                machine learning, cloud platforms, and generative AI. I believe in building applications 
+                                that not only function flawlessly but also provide exceptional business value.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Two-Column Collapsible Sections -->
+                <div class="about-grid">
+                    <!-- Experience Column -->
+                    <div>
+                        <div class="collapsible-section active" data-section="experience">
+                            <div class="collapsible-header">
+                                <h3 class="collapsible-title">
+                                    <i class="fas fa-briefcase"></i> Experience
+                                </h3>
+                                <div class="collapsible-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="collapsible-content">
+                                <div class="collapsible-body">
+                                    <p class="experience-subtitle">A decade of crafting digital experiences across industries</p>
+                                    <div class="experience-timeline">
+                                        <!-- Timeline Line -->
+                                        <div class="timeline-line-wrapper">
+                                            <svg class="timeline-line" viewBox="0 0 2 400" preserveAspectRatio="none">
+                                                <line x1="1" y1="0" x2="1" y2="400" stroke="url(#experienceGradient)" stroke-width="3"/>
+                                                <defs>
+                                                    <linearGradient id="experienceGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                        <stop offset="0%" style="stop-color:var(--accent-blue-light);stop-opacity:0.8" />
+                                                        <stop offset="50%" style="stop-color:var(--accent-cyan);stop-opacity:0.8" />
+                                                        <stop offset="100%" style="stop-color:var(--accent-blue);stop-opacity:0.8" />
+                                                    </linearGradient>
+                                                </defs>
+                                            </svg>
+                                        </div>
+
+                                        <!-- Experience Items -->
+                                        <div class="experience-items">
+                                            <!-- 2024 - Present -->
+                                            <div class="experience-item">
+                                                <div class="experience-marker">
+                                                    <div class="experience-dot"></div>
+                                                </div>
+                                                <div class="experience-content">
+                                                    <div class="experience-year">2024 - Present</div>
+                                                    <h4>Tech Lead (Data, AI/ML)</h4>
+                                                    <p class="experience-company">TAO Digital</p>
+                                                    <p class="experience-description">Leading data engineering and AI/ML initiatives, architecting scalable solutions and driving innovation</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 2021 - 2024 -->
+                                            <div class="experience-item">
+                                                <div class="experience-marker">
+                                                    <div class="experience-dot"></div>
+                                                </div>
+                                                <div class="experience-content">
+                                                    <div class="experience-year">2021 - 2024</div>
+                                                    <h4>ML Engineer</h4>
+                                                    <p class="experience-company">Turing.com</p>
+                                                    <p class="experience-description">Developed and deployed machine learning models at scale, working with global teams</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 2018 - 2021 -->
+                                            <div class="experience-item">
+                                                <div class="experience-marker">
+                                                    <div class="experience-dot"></div>
+                                                </div>
+                                                <div class="experience-content">
+                                                    <div class="experience-year">2018 - 2021</div>
+                                                    <h4>Consultant</h4>
+                                                    <p class="experience-company">Wipro</p>
+                                                    <p class="experience-description">Provided strategic data consulting services and implemented analytics solutions for enterprise clients</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- 2016 - 2018 -->
+                                            <div class="experience-item">
+                                                <div class="experience-marker">
+                                                    <div class="experience-dot"></div>
+                                                </div>
+                                                <div class="experience-content">
+                                                    <div class="experience-year">2016 - 2018</div>
+                                                    <h4>Associate Consultant</h4>
+                                                    <p class="experience-company">Virtusa</p>
+                                                    <p class="experience-description">Contributed to data analytics projects and developed technical consulting expertise</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education Column -->
+                    <div>
+                        <div class="collapsible-section active" data-section="education">
+                            <div class="collapsible-header">
+                                <h3 class="collapsible-title">
+                                    <i class="fas fa-graduation-cap"></i> Education & Certifications
+                                </h3>
+                                <div class="collapsible-toggle">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <div class="collapsible-content">
+                                <div class="collapsible-body">
+                                    <div class="education-list">
+                                        <div class="education-item">
+                                            <i class="fas fa-graduation-cap"></i>
+                                            <div>
+                                                <h4>Bachelor's in Engineering</h4>
+                                                <p>Computer Science & Engineering • 2008 - 2012</p>
+                                            </div>
+                                        </div>
+                                        <div class="education-item">
+                                            <i class="fas fa-award"></i>
+                                            <div>
+                                                <h4>AWS Solutions Architect</h4>
+                                                <p>Amazon Web Services • 2023</p>
+                                            </div>
+                                        </div>
+                                        <div class="education-item">
+                                            <i class="fas fa-award"></i>
+                                            <div>
+                                                <h4>Azure Data Engineer Associate</h4>
+                                                <p>Microsoft Azure • 2022</p>
+                                            </div>
+                                        </div>
+                                        <div class="education-item">
+                                            <i class="fas fa-award"></i>
+                                            <div>
+                                                <h4>Google Cloud ML Engineer</h4>
+                                                <p>Google Cloud Platform • 2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="tab-content">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Portfolio</h1>
+                    <p>Explore my projects and technical contributions</p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card enhanced-card">
+                        <div class="project-header">
+                            <div class="project-image gradient-bg-1">
+                                <i class="fas fa-robot"></i>
+                                <div class="project-overlay">
+                                    <button class="view-btn"><i class="fas fa-external-link-alt"></i></button>
+                                </div>
+                            </div>
+                            <div class="project-status">
+                                <span class="status-badge completed">Completed</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>AI/ML Predictive Analytics Platform</h3>
+                            <p class="project-description">Enterprise-scale machine learning platform for predictive analytics with automated model training, deployment, and monitoring capabilities.</p>
+                            <div class="project-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-chart-up"></i>
+                                    <span>35% Accuracy Improvement</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-clock"></i>
+                                    <span>6 Months</span>
+                                </div>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag python"><i class="fab fa-python"></i>Python</span>
+                                <span class="tech-tag tensorflow"><i class="fas fa-brain"></i>TensorFlow</span>
+                                <span class="tech-tag aws"><i class="fab fa-aws"></i>AWS</span>
+                                <span class="tech-tag kubernetes"><i class="fas fa-dharmachakra"></i>Kubernetes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card enhanced-card">
+                        <div class="project-header">
+                            <div class="project-image gradient-bg-2">
+                                <i class="fas fa-database"></i>
+                                <div class="project-overlay">
+                                    <button class="view-btn"><i class="fas fa-external-link-alt"></i></button>
+                                </div>
+                            </div>
+                            <div class="project-status">
+                                <span class="status-badge completed">Completed</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Real-time Data Pipeline Architecture</h3>
+                            <p class="project-description">Scalable real-time data processing pipeline handling 10TB+ daily data with automated ETL processes and monitoring dashboards.</p>
+                            <div class="project-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-database"></i>
+                                    <span>10TB+ Daily Processing</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>99.9% Uptime</span>
+                                </div>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag spark"><i class="fas fa-fire"></i>Spark</span>
+                                <span class="tech-tag kafka"><i class="fas fa-stream"></i>Kafka</span>
+                                <span class="tech-tag docker"><i class="fab fa-docker"></i>Docker</span>
+                                <span class="tech-tag airflow"><i class="fas fa-wind"></i>Airflow</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card enhanced-card">
+                        <div class="project-header">
+                            <div class="project-image gradient-bg-3">
+                                <i class="fas fa-chart-line"></i>
+                                <div class="project-overlay">
+                                    <button class="view-btn"><i class="fas fa-external-link-alt"></i></button>
+                                </div>
+                            </div>
+                            <div class="project-status">
+                                <span class="status-badge ongoing">Ongoing</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Executive Analytics Dashboard</h3>
+                            <p class="project-description">Interactive business intelligence dashboard with real-time KPI tracking, predictive insights, and automated reporting features.</p>
+                            <div class="project-metrics">
+                                <div class="metric">
+                                    <i class="fas fa-users"></i>
+                                    <span>500+ Daily Users</span>
+                                </div>
+                                <div class="metric">
+                                    <i class="fas fa-chart-bar"></i>
+                                    <span>15 KPIs Tracked</span>
+                                </div>
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag react"><i class="fab fa-react"></i>React</span>
+                                <span class="tech-tag d3"><i class="fas fa-chart-pie"></i>D3.js</span>
+                                <span class="tech-tag python"><i class="fab fa-python"></i>Python</span>
+                                <span class="tech-tag tableau"><i class="fas fa-table"></i>Tableau</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="tab-content">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Blog & Articles</h1>
+                    <p>Insights, tutorials, and thought leadership in Data & AI/ML</p>
+                </div>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Article Title 1</h3>
+                            <p class="blog-excerpt">Content will be added here...</p>
+                            <div class="blog-meta">
+                                <span class="blog-date">Date: TBD</span>
+                                <span class="blog-category">AI/ML</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Article Title 2</h3>
+                            <p class="blog-excerpt">Content will be added here...</p>
+                            <div class="blog-meta">
+                                <span class="blog-date">Date: TBD</span>
+                                <span class="blog-category">Data Engineering</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="tab-content">
+            <div class="container">
+                <div class="contact-hero">
+                    <div class="contact-left">
+                        <h1 class="contact-title">Let's have<br><span class="contact-highlight">a Chat</span></h1>
+                        <p class="contact-subtitle">Want to discuss projects, collaborate, or just grab a coffee? Hit me up!</p>
+                        <a href="#contactForm" class="contact-cta-btn">
+                            <i class="fas fa-comments"></i>
+                            Let's Chat
+                        </a>
+                    </div>
+                    <div class="contact-right">
+                        <div class="contact-info-box">
+                            <h3 class="contact-section-title">GET IN TOUCH</h3>
+                            <div class="contact-info-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:raghava.r4u@gmail.com">raghava.r4u@gmail.com</a>
+                            </div>
+                            <div class="contact-info-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+919703449527">+91 9703449527</a>
+                            </div>
+                        </div>
+                        <div class="contact-social-box">
+                            <h3 class="contact-section-title">FOLLOW ME</h3>
+                            <div class="contact-social-links">
+                                <a href="https://www.linkedin.com/in/raghavar4u/" target="_blank" class="social-icon-btn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="mailto:raghava.r4u@gmail.com" class="social-icon-btn">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container" id="contactForm">
+                    <div class="contact-form">
+                        <h2>Send Message</h2>
+                        <form onsubmit="sendMessage(event)">
+                            <div class="form-group">
+                                <label for="senderName">Name</label>
+                                <input type="text" id="senderName" name="senderName" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="senderEmail">Email</label>
+                                <input type="email" id="senderEmail" name="senderEmail" placeholder="your@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="tab-content">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Resume</h1>
+                    <p>Professional experience and qualifications</p>
+                </div>
+                <div class="resume-actions">
+                    <button class="btn-primary" id="downloadResume">
+                        <i class="fas fa-download"></i> Download Resume
+                    </button>
+                    <button class="btn-secondary" id="viewResume">
+                        <i class="fas fa-eye"></i> View Resume
+                    </button>
+                </div>
+                <div id="resumePdfViewer" class="resume-pdf-viewer" style="display: none;">
+                    <div class="pdf-viewer-header">
+                        <button class="btn-close-pdf" id="closePdfViewer">
+                            <i class="fas fa-times"></i> Close
+                        </button>
+                    </div>
+                    <iframe id="pdfFrame" src="" class="pdf-frame"></iframe>
+                </div>
+                <div id="resumePreview" class="resume-preview" style="display: none;">
+                    <div class="resume-section">
+                        <h3>Experience</h3>
+                        <div class="timeline-item">
+                            <h4>Tech Lead (Data, AI/ML)</h4>
+                            <p class="company">Company Name</p>
+                            <p class="duration">20XX - Present</p>
+                            <p>Content will be added here...</p>
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <h3>Education</h3>
+                        <div class="timeline-item">
+                            <h4>Degree</h4>
+                            <p class="company">Institution</p>
+                            <p class="duration">Year</p>
+                        </div>
+                    </div>
+                    <div class="resume-section">
+                        <h3>Certifications</h3>
+                        <ul class="cert-list">
+                            <li>Certification 1</li>
+                            <li>Certification 2</li>
+                            <li>Certification 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media" class="tab-content">
+            <div class="youtube-container">
+                <!-- YouTube Channel Header -->
+                <div class="youtube-header">
+                    <div class="channel-banner">
+                        <div class="channel-info">
+                            <div class="channel-avatar">
+                                <img src="https://yt3.ggpht.com/ytc/AIdro_m8-rSF_lrNu1nJkVr8jxKz8sXvFf9TQaGOgjGx=s88-c-k-c0x00ffffff-no-rj" alt="TheRaghava4u" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <div class="avatar-fallback" style="display: none;">
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                            </div>
+                            <div class="channel-details">
+                                <h1 class="channel-name">TheRaghava4u</h1>
+                                <div class="channel-stats">
+                                    <span class="subscriber-count">Tech Content Creator</span>
+                                    <span class="video-count">• Data & AI Enthusiast</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="channel-actions">
+                            <a href="https://www.youtube.com/@TheRaghava4u" target="_blank" class="subscribe-btn">
+                                <i class="fab fa-youtube"></i>
+                                <span>Visit Channel</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- YouTube Tabs -->
+                <div class="youtube-tabs">
+                    <div class="tab-list">
+                        <button class="youtube-tab active" data-youtube-tab="videos">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Videos</span>
+                        </button>
+                        <button class="youtube-tab" data-youtube-tab="playlists">
+                            <i class="fas fa-list"></i>
+                            <span>Playlists</span>
+                        </button>
+                        <button class="youtube-tab" data-youtube-tab="about">
+                            <i class="fas fa-info-circle"></i>
+                            <span>About</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Videos Tab Content -->
+                <div class="youtube-content" id="videos-content">
+                    <div class="videos-grid">
+                        <div class="video-card" onclick="window.open('https://www.youtube.com/@TheRaghava4u', '_blank')">
+                            <div class="video-thumbnail">
+                                <div class="thumbnail-placeholder" style="background: linear-gradient(135deg, #3776ab 0%, #ffd343 100%);">
+                                    <i class="fab fa-python"></i>
+                                    <div class="duration">18:32</div>
+                                </div>
+                                <div class="play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3 class="video-title">Python for Data Science: Complete Guide</h3>
+                                <div class="video-meta">
+                                    <span class="views">25K views</span>
+                                    <span class="upload-date">• 2 weeks ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-card" onclick="window.open('https://www.youtube.com/@TheRaghava4u', '_blank')">
+                            <div class="video-thumbnail">
+                                <div class="thumbnail-placeholder" style="background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);">
+                                    <i class="fas fa-robot"></i>
+                                    <div class="duration">24:18</div>
+                                </div>
+                                <div class="play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3 class="video-title">Machine Learning Pipeline in Production</h3>
+                                <div class="video-meta">
+                                    <span class="views">18.5K views</span>
+                                    <span class="upload-date">• 3 weeks ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-card" onclick="window.open('https://www.youtube.com/@TheRaghava4u', '_blank')">
+                            <div class="video-thumbnail">
+                                <div class="thumbnail-placeholder" style="background: linear-gradient(135deg, #ff9500 0%, #232f3e 100%);">
+                                    <i class="fab fa-aws"></i>
+                                    <div class="duration">32:45</div>
+                                </div>
+                                <div class="play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3 class="video-title">AWS Data Pipeline Architecture Deep Dive</h3>
+                                <div class="video-meta">
+                                    <span class="views">22K views</span>
+                                    <span class="upload-date">• 1 month ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-card" onclick="window.open('https://www.youtube.com/@TheRaghava4u', '_blank')">
+                            <div class="video-thumbnail">
+                                <div class="thumbnail-placeholder" style="background: linear-gradient(135deg, #2496ed 0%, #0db7ed 100%);">
+                                    <i class="fab fa-docker"></i>
+                                    <div class="duration">28:12</div>
+                                </div>
+                                <div class="play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3 class="video-title">Docker for Data Science Teams</h3>
+                                <div class="video-meta">
+                                    <span class="views">16.8K views</span>
+                                    <span class="upload-date">• 1 month ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-card" onclick="window.open('https://www.youtube.com/@TheRaghava4u', '_blank')">
+                            <div class="video-thumbnail">
+                                <div class="thumbnail-placeholder" style="background: linear-gradient(135deg, #e25a1c 0%, #f39c12 100%);">
+                                    <i class="fas fa-stream"></i>
+                                    <div class="duration">35:20</div>
+                                </div>
+                                <div class="play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3 class="video-title">Apache Kafka & Spark for Real-time Analytics</h3>
+                                <div class="video-meta">
+                                    <span class="views">14.2K views</span>
+                                    <span class="upload-date">• 2 months ago</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-card" onclick="window.open('https://www.youtube.com/@TheRaghava4u', '_blank')">
+                            <div class="video-thumbnail">
+                                <div class="thumbnail-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                    <i class="fas fa-code-branch"></i>
+                                    <div class="duration">21:33</div>
+                                </div>
+                                <div class="play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <h3 class="video-title">ETL vs ELT: Modern Data Engineering</h3>
+                                <div class="video-meta">
+                                    <span class="views">19.1K views</span>
+                                    <span class="upload-date">• 3 months ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Playlists Tab Content -->
+                <div class="youtube-content" id="playlists-content" style="display: none;">
+                    <div class="playlists-grid">
+                        <div class="playlist-card" onclick="window.open('https://www.youtube.com/@TheRaghava4u', '_blank')">
+                            <div class="playlist-thumbnail">
+                                <div class="thumbnail-placeholder" style="background: linear-gradient(135deg, #3776ab 0%, #ffd343 100%);">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="playlist-count">12 videos</div>
+                            </div>
+                            <div class="playlist-info">
+                                <h3>Python for Data Science</h3>
+                                <p>Complete Python tutorial series for data analysis and machine learning</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-card" onclick="window.open('https://www.youtube.com/@TheRaghava4u', '_blank')">
+                            <div class="playlist-thumbnail">
+                                <div class="thumbnail-placeholder" style="background: linear-gradient(135deg, #ff9500 0%, #232f3e 100%);">
+                                    <i class="fab fa-aws"></i>
+                                </div>
+                                <div class="playlist-count">15 videos</div>
+                            </div>
+                            <div class="playlist-info">
+                                <h3>AWS for Data Engineers</h3>
+                                <p>Comprehensive AWS cloud services for data engineering workflows</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-card" onclick="window.open('https://www.youtube.com/@TheRaghava4u', '_blank')">
+                            <div class="playlist-thumbnail">
+                                <div class="thumbnail-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="playlist-count">8 videos</div>
+                            </div>
+                            <div class="playlist-info">
+                                <h3>Tech Career Growth</h3>
+                                <p>Career advice and growth strategies for tech professionals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Tab Content -->
+                <div class="youtube-content" id="about-content" style="display: none;">
+                    <div class="about-section">
+                        <div class="about-card">
+                            <h3>Channel Description</h3>
+                            <p>Welcome to TheRaghava4u! I'm Raghavendra Reddy Thummala, a Tech Lead with 12+ years of experience in Data Engineering, AI/ML, and Digital Transformation.</p>
+                            <p>On this channel, you'll find content about:</p>
+                            <ul>
+                                <li>Data Engineering best practices and architecture</li>
+                                <li>AI/ML implementation in production environments</li>
+                                <li>Tech leadership and team management</li>
+                                <li>Cloud technologies and scalable solutions</li>
+                                <li>Digital transformation strategies</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="about-card">
+                            <h3>Channel Stats</h3>
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>Joined November 2020</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-video"></i>
+                                    <span>40+ Videos</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i class="fas fa-eye"></i>
+                                    <span>100K+ Total Views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>Raghava</span>
+                    </div>
+                </div>
+                
+                <div class="footer-sections">
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Data Engineering</a></li>
+                            <li><a href="#">AI/ML Solutions</a></li>
+                            <li><a href="#">Cloud Architecture</a></li>
+                            <li><a href="#">Technical Consulting</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Expertise</h4>
+                        <ul>
+                            <li><a href="#">Python & Data Science</a></li>
+                            <li><a href="#">AWS & Azure</a></li>
+                            <li><a href="#">Machine Learning</a></li>
+                            <li><a href="#">Big Data & Analytics</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>Get In Touch</h4>
+                        <div class="contact-details">
+                            <p><strong>Email:</strong> raghava.r4u@gmail.com</p>
+                            <p><strong>Phone:</strong> +91 9703449527</p>
+                            <p><strong>Location:</strong> Hyderabad, India</p>
+                            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/raghavar4u/" target="_blank" style="color: var(--accent-cyan);">@raghavar4u</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#about" class="footer-link">About Me</a>
+                    <a href="#projects" class="footer-link">Portfolio</a>
+                    <a href="#blog" class="footer-link">Blog</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Raghavendra Reddy Thummala. All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="Frontend/js/script.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // YouTube tabs functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('=== Page Initialization ===');
+            
+            // Initialize tabs - ensure only home is active
+            document.querySelectorAll('.tab-content').forEach((tab) => {
+                // Remove active class from all tabs first
+                tab.classList.remove('active');
+            });
+            
+            // Now set only home to active
+            const homeTab = document.getElementById('home');
+            if (homeTab) {
+                homeTab.classList.add('active');
+                console.log('Home tab set to active');
+            }
+            
+            // Verify the initialization
+            setTimeout(() => {
+                document.querySelectorAll('.tab-content').forEach((tab) => {
+                    if (tab.id !== 'home' && tab.classList.contains('active')) {
+                        console.warn('Tab ' + tab.id + ' should not be active on load');
+                        tab.classList.remove('active');
+                    }
+                });
+                console.log('About tab active status:', document.getElementById('about').classList.contains('active'));
+            }, 100);
+            
+            const youtubeTabs = document.querySelectorAll('.youtube-tab');
+            
+            youtubeTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Remove active class from all tabs
+                    youtubeTabs.forEach(t => t.classList.remove('active'));
+                    
+                    // Add active class to clicked tab
+                    tab.classList.add('active');
+                    
+                    // Hide all content sections
+                    document.querySelectorAll('.youtube-content').forEach(content => {
+                        content.style.display = 'none';
+                    });
+                    
+                    // Show selected content
+                    const contentId = tab.getAttribute('data-youtube-tab') + '-content';
+                    const contentElement = document.getElementById(contentId);
+                    if (contentElement) {
+                        contentElement.style.display = 'block';
+                    }
+                });
+            });
+
+            // Fix button functionality
+            document.querySelectorAll('.btn-primary, .btn-secondary').forEach(button => {
+                button.addEventListener('click', function() {
+                    const tab = this.getAttribute('data-tab');
+                    if (tab) {
+                        // Hide all tab contents
+                        document.querySelectorAll('.tab-content').forEach(content => {
+                            content.classList.remove('active');
+                        });
+                        
+                        // Show target tab
+                        const targetTab = document.getElementById(tab);
+                        if (targetTab) {
+                            targetTab.classList.add('active');
+                            // Scroll to top of content
+                            setTimeout(() => {
+                                targetTab.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }, 50);
+                        }
+                        
+                        // Update navigation
+                        document.querySelectorAll('.nav-link').forEach(link => {
+                            link.classList.remove('active');
+                        });
+                        
+                        const navLink = document.querySelector(`[data-tab="${tab}"]`);
+                        if (navLink) {
+                            navLink.classList.add('active');
+                        }
+                        
+                        // Collapse collapsible sections when leaving about tab
+                        if (tab !== 'about') {
+                            document.querySelectorAll('#about .collapsible-section').forEach(section => {
+                                section.classList.remove('active');
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Add navigation links functionality
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const tab = this.getAttribute('data-tab');
+                    if (tab) {
+                        console.log(`Switching to tab: ${tab}`);
+                        
+                        // Hide all tab contents
+                        document.querySelectorAll('.tab-content').forEach(content => {
+                            if (content.classList.contains('active')) {
+                                console.log(`Removing active from: ${content.id}`);
+                            }
+                            content.classList.remove('active');
+                        });
+                        
+                        // Show target tab
+                        const targetTab = document.getElementById(tab);
+                        if (targetTab) {
+                            console.log(`Adding active to: ${tab}`);
+                            targetTab.classList.add('active');
+                            // Scroll to top of content
+                            targetTab.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                        
+                        // Update navigation
+                        document.querySelectorAll('.nav-link').forEach(navLink => {
+                            navLink.classList.remove('active');
+                        });
+                        
+                        this.classList.add('active');
+                        
+                        // Collapse collapsible sections when leaving about tab
+                        if (tab !== 'about') {
+                            console.log('Collapsing about sections');
+                            document.querySelectorAll('#about .collapsible-section').forEach(section => {
+                                section.classList.remove('active');
+                            });
+                        }
+                        
+                        // Verification after 100ms
+                        setTimeout(() => {
+                            const allTabs = document.querySelectorAll('.tab-content');
+                            allTabs.forEach(t => {
+                                if (t.id !== tab && t.classList.contains('active')) {
+                                    console.warn(`Tab ${t.id} should not be active!`);
+                                    t.classList.remove('active');
+                                }
+                            });
+                            console.log(`Final state - Active tab should be: ${tab}, About tab active: ${document.getElementById('about').classList.contains('active')}`);
+                        }, 100);
+                    }
+                });
+            });
+        });
+
+        // Button navigation function
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.tab-content').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show target section
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+            
+            // Update navigation
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-tab') === sectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Send Message Function
+        function sendMessage(event) {
+            event.preventDefault();
+            
+            const senderName = document.getElementById('senderName').value;
+            const senderEmail = document.getElementById('senderEmail').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:raghava.r4u@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${senderName}\nEmail: ${senderEmail}\n\nMessage:\n${message}`)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            alert('Your email client will open to send the message!');
+            
+            // Reset form
+            document.getElementById('contactForm').reset();
+        }
+
+        // Download CV Function
+        function downloadCV() {
+            alert('CV download functionality will be implemented soon!');
+        }
+
+        // Mobile Menu Functions
+        function toggleMobileMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            navLinks.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            document.body.classList.toggle('menu-open');
+        }
+
+        function closeMobileMenu() {
+            const navLinks = document.getElementById('navLinks');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            navLinks.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            menuBtn.classList.remove('active');
+            
+            // Re-enable body scroll
+            document.body.classList.remove('menu-open');
+        }
+
+        // Close mobile menu when clicking nav links
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    // Close mobile menu on link click
+                    if (window.innerWidth <= 768) {
+                        closeMobileMenu();
+                    }
+                });
+            });
+            
+            // Collapsible Section Functionality
+            const collapsibleSections = document.querySelectorAll('.collapsible-section');
+            collapsibleSections.forEach(section => {
+                const header = section.querySelector('.collapsible-header');
+                
+                header.addEventListener('click', function() {
+                    section.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
