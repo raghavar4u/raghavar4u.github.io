@@ -159,7 +159,7 @@ class ModernPortfolio {
         const resumePreview = document.getElementById('resumePreview');
         
         // Updated path to access the PDF from Data/documents folder
-        const pdfPath = '../../Data/documents/Infographic_Resume_Raghava.pdf';
+        const pdfPath = 'Data/documents/Infographic_Resume_Raghava.pdf';
 
         if (downloadBtn) {
             downloadBtn.addEventListener('click', (e) => {
