@@ -159,20 +159,28 @@ class ModernPortfolio {
         const resumePreview = document.getElementById('resumePreview');
         
         // Updated path to access the PDF from Data/documents folder
-        const pdfPath = 'Data/documents/Infographic_Resume_Raghava.pdf';
+        const pdfPath = './Data/documents/Infographic_Resume_Raghava.pdf';
 
         if (downloadBtn) {
             downloadBtn.addEventListener('click', (e) => {
                 e.preventDefault();
                 e.stopPropagation();
-                console.log('Download button clicked');
-                const link = document.createElement('a');
-                link.href = pdfPath;
-                link.download = 'Infographic_Resume_Raghava.pdf';
-                link.style.display = 'none';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
+                console.log('Download button clicked, PDF path:', pdfPath);
+                try {
+                    // Create a temporary link to download the file
+                    const link = document.createElement('a');
+                    link.href = pdfPath;
+                    link.download = 'Infographic_Resume_Raghava.pdf';
+                    link.style.display = 'none';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    console.log('Download initiated');
+                } catch (error) {
+                    console.error('Download error:', error);
+                    // Fallback: open in new tab
+                    window.open(pdfPath, '_blank');
+                }
             });
         }
 
@@ -180,12 +188,19 @@ class ModernPortfolio {
             viewBtn.addEventListener('click', (e) => {
                 e.preventDefault();
                 e.stopPropagation();
-                console.log('View button clicked, showing PDF');
-                // Hide the text preview and show PDF viewer
-                resumePreview.style.display = 'none';
-                pdfViewer.style.display = 'block';
-                // Set the PDF source
-                pdfFrame.src = pdfPath;
+                console.log('View button clicked, showing PDF with path:', pdfPath);
+                try {
+                    // Hide the text preview and show PDF viewer
+                    if (resumePreview) resumePreview.style.display = 'none';
+                    if (pdfViewer) pdfViewer.style.display = 'block';
+                    // Set the PDF source
+                    if (pdfFrame) {
+                        pdfFrame.src = pdfPath;
+                        console.log('PDF source set to:', pdfPath);
+                    }
+                } catch (error) {
+                    console.error('View PDF error:', error);
+                }
             });
         }
 
