@@ -143,8 +143,9 @@ class ModernPortfolio {
     }
 
     scrollToTop() {
+        // Scroll to a small offset to account for fixed header
         window.scrollTo({
-            top: 0,
+            top: 10,
             behavior: 'smooth'
         });
     }
