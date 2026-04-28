@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Raghavendra Reddy Thummala - Tech Lead Portfolio</title>
-    <meta name="description" content="Tech Lead specializing in Data Engineering, AI/ML, and Digital Transformation with 12+ years experience">
+    <meta name="description" content="Tech Lead specializing in Data Engineering, AI/ML, Cloud, and Digital Transformation with 12+ years experience">
     <!-- Mobile-optimized meta tags -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -15,6 +15,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        .vertical-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20px;
+            bottom: 20px;
+            width: 3px;
+            background: linear-gradient(180deg, #0070F3 0%, #00D4FF 50%, #FF6B35 100%);
+            z-index: 1;
+        }
+        
+        .timeline-marker:hover {
+            transform: scale(1.2) !important;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <!-- Animated Background -->
@@ -55,11 +73,6 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#blog" class="nav-link" data-tab="blog">
-                            <i class="fas fa-blog"></i> Articles
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a href="#contact" class="nav-link" data-tab="contact">
                             <i class="fas fa-envelope"></i> Contact
                         </a>
@@ -71,7 +84,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="#media" class="nav-link" data-tab="media">
-                            <i class="fas fa-play-circle"></i> Media
+                            <i class="fas fa-play-circle"></i> Creative Hub
                         </a>
                     </li>
                 </ul>
@@ -98,61 +111,59 @@
                         </div>
                         <h1>Welcome to My Portfolio</h1>
                         <h2 class="gradient-text">Raghavendra Reddy Thummala</h2>
-                        <h3 class="typing-text">Tech Lead (Data, AI/ML)</h3>
+                        <h3 class="typing-text">Tech Lead (Data, AI/ML & Cloud)</h3>
                         <p class="hero-description">
-                            With over 12 years of experience in Data Engineering, AI/ML, and Technology Leadership, 
+                            With over 12 years of experience in Data Engineering, AI/ML, Cloud and Technology Leadership, 
                             I specialize in building scalable data solutions and driving digital transformation initiatives.
                         </p>
                         <div class="hero-stats">
-                            <div class="stat-card highlight-card">
-                                <div class="stat-icon">
-                                    <i class="fas fa-calendar-alt"></i>
+                            <div class="stat-card">
+                                <div class="stat-card-top">
+                                    <i class="fas fa-calendar-alt stat-card-icon"></i>
+                                    <h3 class="stat-card-number"><span class="counter" data-target="12">12</span>+</h3>
                                 </div>
-                                <div class="stat-content">
-                                    <h4 class="counter" data-target="12">12</h4>
-                                    <span class="plus-sign">+</span>
-                                    <p>Years Experience</p>
-                                </div>
+                                <p class="stat-card-label">Years Experience</p>
                             </div>
-                            <div class="stat-card highlight-card">
-                                <div class="stat-icon">
-                                    <i class="fas fa-project-diagram"></i>
+
+                            <div class="stat-card">
+                                <div class="stat-card-top">
+                                    <i class="fas fa-project-diagram stat-card-icon"></i>
+                                    <h3 class="stat-card-number"><span class="counter" data-target="15">15</span>+</h3>
                                 </div>
-                                <div class="stat-content">
-                                    <h4 class="counter" data-target="15">15</h4>
-                                    <span class="plus-sign">+</span>
-                                    <p>Projects</p>
-                                </div>
+                                <p class="stat-card-label">Projects</p>
                             </div>
-                            <div class="stat-card highlight-card">
-                                <div class="stat-icon">
-                                    <i class="fas fa-robot"></i>
+
+                            <div class="stat-card">
+                                <div class="stat-card-top">
+                                    <i class="fas fa-certificate stat-card-icon"></i>
+                                    <h3 class="stat-card-number"><span class="counter" data-target="5">5</span></h3>
                                 </div>
-                                <div class="stat-content">
-                                    <h4 class="specialist-text">Data & AI/ML</h4>
-                                    <p>Specialist</p>
-                                </div>
+                                <p class="stat-card-label">Certifications</p>
                             </div>
-                        </div>
-                        <div class="hero-buttons">
-                            <button class="btn-primary gradient-btn" data-tab="projects">
-                                <i class="fas fa-briefcase"></i>
-                                <span>View Portfolio</span>
-                            </button>
-                            <button class="btn-secondary glass-btn" data-tab="contact">
-                                <i class="fas fa-envelope"></i>
-                                <span>Get In Touch</span>
-                            </button>
-                            <button class="btn-linkedin" onclick="window.open('https://www.linkedin.com/in/raghavar4u/', '_blank')">
-                                <i class="fab fa-linkedin-in"></i>
-                                <span>LinkedIn</span>
-                            </button>
+
+                            <div class="stat-card">
+                                <div class="stat-card-top">
+                                    <i class="fas fa-robot stat-card-icon"></i>
+                                    <h3 class="stat-card-specialty">Data & AI/ML</h3>
+                                </div>
+                                <p class="stat-card-label">Specialist</p>
+                            </div>
                         </div>
                     </div>
                     <div class="hero-image animate__animated animate__fadeInRight">
                         <div class="profile-container">
                             <div class="profile-bg-shape"></div>
                             <img src="Frontend/assets/profile.jpg" alt="Raghavendra Reddy Thummala" class="profile-image">
+                        </div>
+                        <div class="hero-buttons">
+                            <button class="btn-linkedin" onclick="window.open('https://www.linkedin.com/in/raghavar4u/', '_blank')">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </button>
+                            <button class="btn-github" onclick="window.open('https://github.com/raghavar4u', '_blank')">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -168,7 +179,7 @@
                     <div class="about-content">
                         <div class="about-text">
                             <p>
-                                I'm Raghavendra Reddy Thummala, a passionate Tech Lead in Data & AI/ML with 12+ years of experience 
+                                I'm Raghavendra Reddy Thummala, a passionate Tech Lead in Data, AI/ML & Cloud with 12+ years of experience 
                                 in creating innovative digital solutions. My expertise spans across modern data technologies, 
                                 machine learning, cloud platforms, and generative AI. I believe in building applications 
                                 that not only function flawlessly but also provide exceptional business value.
@@ -178,9 +189,114 @@
                 </div>
 
                 <!-- Two-Column Collapsible Sections -->
-                <div class="about-grid">
-                    <!-- Experience Column -->
-                    <div>
+                <div class="about-grid-full">
+                    <!-- Education & Certifications Side by Side -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; max-width: 1200px; margin: 0 auto;">
+                        <!-- Education Section -->
+                        <div>
+                            <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0 0 1.5rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-graduation-cap"></i> Education
+                            </h3>
+                            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                                <!-- Education Item 1 -->
+                                <div style="display: flex; gap: 1rem;">
+                                    <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #10B981 0%, #14B8A6 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; flex-shrink: 0;">📚</div>
+                                    <div>
+                                        <h4 style="margin: 0 0 0.25rem; font-size: 1rem; color: var(--text-primary);">PGDM (ICT Management)</h4>
+                                        <p style="margin: 0 0 0.25rem; color: var(--text-secondary); font-size: 0.9rem;">ISTTM</p>
+                                        <p style="margin: 0; color: var(--text-muted); font-size: 0.85rem;">CGPA: 7.1 | 2013</p>
+                                    </div>
+                                </div>
+
+                                <!-- Education Item 2 -->
+                                <div style="display: flex; gap: 1rem;">
+                                    <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #14B8A6 0%, #06B6D4 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; flex-shrink: 0;">🎓</div>
+                                    <div>
+                                        <h4 style="margin: 0 0 0.25rem; font-size: 1rem; color: var(--text-primary);">B.Tech (ECE)</h4>
+                                        <p style="margin: 0 0 0.25rem; color: var(--text-secondary); font-size: 0.9rem;">JNTU Kakinada</p>
+                                        <p style="margin: 0; color: var(--text-muted); font-size: 0.85rem;">71% (Distinction) | 2011</p>
+                                    </div>
+                                </div>
+
+                                <!-- Education Item 3 -->
+                                <div style="display: flex; gap: 1rem;">
+                                    <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #06B6D4 0%, #3B82F6 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; flex-shrink: 0;">✏️</div>
+                                    <div>
+                                        <h4 style="margin: 0 0 0.25rem; font-size: 1rem; color: var(--text-primary);">Intermediate (MPC)</h4>
+                                        <p style="margin: 0; color: var(--text-muted); font-size: 0.85rem;">91% | 2007</p>
+                                    </div>
+                                </div>
+
+                                <!-- Education Item 4 -->
+                                <div style="display: flex; gap: 1rem;">
+                                    <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #3B82F6 0%, #6366F1 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; flex-shrink: 0;">📖</div>
+                                    <div>
+                                        <h4 style="margin: 0 0 0.25rem; font-size: 1rem; color: var(--text-primary);">SSC</h4>
+                                        <p style="margin: 0; color: var(--text-muted); font-size: 0.85rem;">87% | 2005</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Certifications Section -->
+                        <div>
+                            <h3 style="font-size: 1.3rem; font-weight: 700; margin: 0 0 1.5rem; color: var(--text-primary); display: flex; align-items: center; gap: 0.5rem;">
+                                <i class="fas fa-certificate"></i> Certifications
+                            </h3>
+                            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                                <!-- Cert Item 1 -->
+                                <div style="display: flex; gap: 1rem;">
+                                    <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #F59E0B 0%, #FF6B35 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; flex-shrink: 0;">☁️</div>
+                                    <div>
+                                        <h4 style="margin: 0 0 0.25rem; font-size: 1rem; color: var(--text-primary);">AWS Certified Machine Learning</h4>
+                                        <p style="margin: 0 0 0.25rem; color: var(--text-secondary); font-size: 0.9rem;">Specialty</p>
+                                        <p style="margin: 0; color: var(--text-muted); font-size: 0.85rem;">Nov 2025</p>
+                                    </div>
+                                </div>
+
+                                <!-- Cert Item 2 -->
+                                <div style="display: flex; gap: 1rem;">
+                                    <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; flex-shrink: 0;">🐘</div>
+                                    <div>
+                                        <h4 style="margin: 0 0 0.25rem; font-size: 1rem; color: var(--text-primary);">HADOOP Hortonworks</h4>
+                                        <p style="margin: 0 0 0.25rem; color: var(--text-secondary); font-size: 0.9rem;">Hadoop Big Data</p>
+                                        <p style="margin: 0; color: var(--text-muted); font-size: 0.85rem;">Aug 2017</p>
+                                    </div>
+                                </div>
+
+                                <!-- Cert Item 3 -->
+                                <div style="display: flex; gap: 1rem;">
+                                    <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; flex-shrink: 0;">📱</div>
+                                    <div>
+                                        <h4 style="margin: 0 0 0.25rem; font-size: 1rem; color: var(--text-primary);">IBM Developer Guide to IoT</h4>
+                                        <p style="margin: 0 0 0.25rem; color: var(--text-secondary); font-size: 0.9rem;">Coursera</p>
+                                    </div>
+                                </div>
+
+                                <!-- Cert Item 4 -->
+                                <div style="display: flex; gap: 1rem;">
+                                    <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; flex-shrink: 0;">🧠</div>
+                                    <div>
+                                        <h4 style="margin: 0 0 0.25rem; font-size: 1rem; color: var(--text-primary);">Deep Learning Specialization</h4>
+                                        <p style="margin: 0 0 0.25rem; color: var(--text-secondary); font-size: 0.9rem;">Andre NG – Coursera</p>
+                                    </div>
+                                </div>
+
+                                <!-- Cert Item 5 -->
+                                <div style="display: flex; gap: 1rem;">
+                                    <div style="width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #EC4899 0%, #DB2777 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; flex-shrink: 0;">📊</div>
+                                    <div>
+                                        <h4 style="margin: 0 0 0.25rem; font-size: 1rem; color: var(--text-primary);">Advanced Analytics Training</h4>
+                                        <p style="margin: 0 0 0.25rem; color: var(--text-secondary); font-size: 0.9rem;">IIT – Hyderabad</p>
+                                        <p style="margin: 0; color: var(--text-muted); font-size: 0.85rem;">Jun 2014</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Section - Full Width -->
+                    <div class="experience-section-full">
                         <div class="collapsible-section active" data-section="experience">
                             <div class="collapsible-header">
                                 <h3 class="collapsible-title">
@@ -192,122 +308,74 @@
                             </div>
                             <div class="collapsible-content">
                                 <div class="collapsible-body">
-                                    <p class="experience-subtitle">A decade of crafting digital experiences across industries</p>
-                                    <div class="experience-timeline">
-                                        <!-- Timeline Line -->
-                                        <div class="timeline-line-wrapper">
-                                            <svg class="timeline-line" viewBox="0 0 2 400" preserveAspectRatio="none">
-                                                <line x1="1" y1="0" x2="1" y2="400" stroke="url(#experienceGradient)" stroke-width="3"/>
-                                                <defs>
-                                                    <linearGradient id="experienceGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                                        <stop offset="0%" style="stop-color:var(--accent-blue-light);stop-opacity:0.8" />
-                                                        <stop offset="50%" style="stop-color:var(--accent-cyan);stop-opacity:0.8" />
-                                                        <stop offset="100%" style="stop-color:var(--accent-blue);stop-opacity:0.8" />
-                                                    </linearGradient>
-                                                </defs>
-                                            </svg>
-                                        </div>
-
-                                        <!-- Experience Items -->
-                                        <div class="experience-items">
-                                            <!-- 2024 - Present -->
-                                            <div class="experience-item">
-                                                <div class="experience-marker">
-                                                    <div class="experience-dot"></div>
-                                                </div>
-                                                <div class="experience-content">
-                                                    <div class="experience-year">2024 - Present</div>
-                                                    <h4>Tech Lead (Data, AI/ML)</h4>
-                                                    <p class="experience-company">TAO Digital</p>
-                                                    <p class="experience-description">Leading data engineering and AI/ML initiatives, architecting scalable solutions and driving innovation</p>
+                                    <div class="experiences-section">
+                                        <h1 class="career-journey-title">Career Journey</h1>
+                                        
+                                        <div class="vertical-timeline" style="position: relative; width: 100%; max-width: 900px; margin: 0 auto; padding: 2rem 0;">
+                                            <!-- Timeline Item 1 - RIGHT SIDE -->
+                                            <div class="timeline-item" style="display: flex; justify-content: flex-end; margin-bottom: 5rem; position: relative; width: 100%; padding: 0 2rem;">
+                                                <div class="timeline-marker" style="position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10; box-shadow: 0 0 0 3px white, 0 2px 8px rgba(0, 0, 0, 0.15); font-weight: 700; font-size: 0.9rem; color: white; background: linear-gradient(135deg, #0070F3 0%, #00D4FF 100%);"></div>
+                                                <div class="timeline-content" style="max-width: 380px; width: 100%; padding-right: 40px;">
+                                                    <h3 style="margin: 0 0 0.2rem 0; font-weight: 700; color: var(--text-primary); font-size: 1.05rem; text-align: right;">TAO Digital <span style="color: var(--text-secondary); font-weight: 500; font-size: 0.95rem;">– Hyderabad</span></h3>
+                                                    <p style="margin: 0.1rem 0 0.3rem 0; color: var(--text-secondary); font-size: 0.95rem; font-weight: 500; text-align: right;">Tech Lead (Data, AI/ML & Cloud)</p>
+                                                    <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem; text-align: right;">Apr 2024 – Present</p>
+                                                    <p style="margin: 0.4rem 0 0 0; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5; text-align: right;">Architected GenAI solutions including RAG-based systems and enterprise AI chatbots. Led cloud-native architecture on AWS, managing team of 2 engineers.</p>
                                                 </div>
                                             </div>
 
-                                            <!-- 2021 - 2024 -->
-                                            <div class="experience-item">
-                                                <div class="experience-marker">
-                                                    <div class="experience-dot"></div>
-                                                </div>
-                                                <div class="experience-content">
-                                                    <div class="experience-year">2021 - 2024</div>
-                                                    <h4>ML Engineer</h4>
-                                                    <p class="experience-company">Turing.com</p>
-                                                    <p class="experience-description">Developed and deployed machine learning models at scale, working with global teams</p>
+                                            <!-- Timeline Item 2 - LEFT SIDE -->
+                                            <div class="timeline-item" style="display: flex; justify-content: flex-start; margin-bottom: 5rem; position: relative; width: 100%; padding: 0 2rem;">
+                                                <div class="timeline-marker" style="position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10; box-shadow: 0 0 0 3px white, 0 2px 8px rgba(0, 0, 0, 0.15); font-weight: 700; font-size: 0.9rem; color: white; background: linear-gradient(135deg, #00D4FF 0%, #FF6B35 100%);"></div>
+                                                <div class="timeline-content" style="max-width: 380px; width: 100%; padding-left: 40px;">
+                                                    <h3 style="margin: 0 0 0.2rem 0; font-weight: 700; color: var(--text-primary); font-size: 1.05rem;">Turing <span style="color: var(--text-secondary); font-weight: 500; font-size: 0.95rem;">– Remote | <em>Client: Johnson & Johnson</em></span></h3>
+                                                    <p style="margin: 0.1rem 0 0.3rem 0; color: var(--text-secondary); font-size: 0.95rem; font-weight: 500;">Machine Learning Engineer</p>
+                                                    <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem;">Aug 2021 – Feb 2024</p>
+                                                    <p style="margin: 0.4rem 0 0 0; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5;">Built intelligent document processing systems using OCR, NER, and ML models. Developed predictive models for OTIF classification and LLM-based summarization.</p>
                                                 </div>
                                             </div>
 
-                                            <!-- 2018 - 2021 -->
-                                            <div class="experience-item">
-                                                <div class="experience-marker">
-                                                    <div class="experience-dot"></div>
-                                                </div>
-                                                <div class="experience-content">
-                                                    <div class="experience-year">2018 - 2021</div>
-                                                    <h4>Consultant</h4>
-                                                    <p class="experience-company">Wipro</p>
-                                                    <p class="experience-description">Provided strategic data consulting services and implemented analytics solutions for enterprise clients</p>
+                                            <!-- Timeline Item 3 - RIGHT SIDE -->
+                                            <div class="timeline-item" style="display: flex; justify-content: flex-end; margin-bottom: 5rem; position: relative; width: 100%; padding: 0 2rem;">
+                                                <div class="timeline-marker" style="position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10; box-shadow: 0 0 0 3px white, 0 2px 8px rgba(0, 0, 0, 0.15); font-weight: 700; font-size: 0.9rem; color: white; background: linear-gradient(135deg, #FF6B35 0%, #C17A43 100%);"></div>
+                                                <div class="timeline-content" style="max-width: 380px; width: 100%; padding-right: 40px;">
+                                                    <h3 style="margin: 0 0 0.2rem 0; font-weight: 700; color: var(--text-primary); font-size: 1.05rem; text-align: right;">Wipro <span style="color: var(--text-secondary); font-weight: 500; font-size: 0.95rem;">– Bangalore & Remote | <em>Client: Cisco</em></span></h3>
+                                                    <p style="margin: 0.1rem 0 0.3rem 0; color: var(--text-secondary); font-size: 0.95rem; font-weight: 500; text-align: right;">Consultant</p>
+                                                    <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem; text-align: right;">Nov 2018 – Aug 2021</p>
+                                                    <p style="margin: 0.4rem 0 0 0; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5; text-align: right;">Built ML models for order risk prediction and supply chain optimization. Developed data pipelines using Hadoop, APIs, and enterprise databases.</p>
                                                 </div>
                                             </div>
 
-                                            <!-- 2016 - 2018 -->
-                                            <div class="experience-item">
-                                                <div class="experience-marker">
-                                                    <div class="experience-dot"></div>
-                                                </div>
-                                                <div class="experience-content">
-                                                    <div class="experience-year">2016 - 2018</div>
-                                                    <h4>Associate Consultant</h4>
-                                                    <p class="experience-company">Virtusa</p>
-                                                    <p class="experience-description">Contributed to data analytics projects and developed technical consulting expertise</p>
+                                            <!-- Timeline Item 4 - LEFT SIDE -->
+                                            <div class="timeline-item" style="display: flex; justify-content: flex-start; margin-bottom: 5rem; position: relative; width: 100%; padding: 0 2rem;">
+                                                <div class="timeline-marker" style="position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10; box-shadow: 0 0 0 3px white, 0 2px 8px rgba(0, 0, 0, 0.15); font-weight: 700; font-size: 0.9rem; color: white; background: linear-gradient(135deg, #C17A43 0%, #8B703B 100%);"></div>
+                                                <div class="timeline-content" style="max-width: 380px; width: 100%; padding-left: 40px;">
+                                                    <h3 style="margin: 0 0 0.2rem 0; font-weight: 700; color: var(--text-primary); font-size: 1.05rem;">Virtusa <span style="color: var(--text-secondary); font-weight: 500; font-size: 0.95rem;">– Chennai & Bangalore | <em>Client: Cisco</em></span></h3>
+                                                    <p style="margin: 0.1rem 0 0.3rem 0; color: var(--text-secondary); font-size: 0.95rem; font-weight: 500;">Associate Consultant</p>
+                                                    <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem;">May 2016 – Nov 2018</p>
+                                                    <p style="margin: 0.4rem 0 0 0; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5;">Delivered analytics solutions for Value Added Services. Built enterprise data solutions and reporting infrastructure.</p>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Education Column -->
-                    <div>
-                        <div class="collapsible-section active" data-section="education">
-                            <div class="collapsible-header">
-                                <h3 class="collapsible-title">
-                                    <i class="fas fa-graduation-cap"></i> Education & Certifications
-                                </h3>
-                                <div class="collapsible-toggle">
-                                    <i class="fas fa-chevron-down"></i>
-                                </div>
-                            </div>
-                            <div class="collapsible-content">
-                                <div class="collapsible-body">
-                                    <div class="education-list">
-                                        <div class="education-item">
-                                            <i class="fas fa-graduation-cap"></i>
-                                            <div>
-                                                <h4>Bachelor's in Engineering</h4>
-                                                <p>Computer Science & Engineering • 2008 - 2012</p>
+                                            <!-- Timeline Item 5 - RIGHT SIDE -->
+                                            <div class="timeline-item" style="display: flex; justify-content: flex-end; margin-bottom: 5rem; position: relative; width: 100%; padding: 0 2rem;">
+                                                <div class="timeline-marker" style="position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10; box-shadow: 0 0 0 3px white, 0 2px 8px rgba(0, 0, 0, 0.15); font-weight: 700; font-size: 0.9rem; color: white; background: linear-gradient(135deg, #8B703B 0%, #7B5C6F 100%);"></div>
+                                                <div class="timeline-content" style="max-width: 380px; width: 100%; padding-right: 40px;">
+                                                    <h3 style="margin: 0 0 0.2rem 0; font-weight: 700; color: var(--text-primary); font-size: 1.05rem; text-align: right;">Immo Info Tech <span style="color: var(--text-secondary); font-weight: 500; font-size: 0.95rem;">– Goa</span></h3>
+                                                    <p style="margin: 0.1rem 0 0.3rem 0; color: var(--text-secondary); font-size: 0.95rem; font-weight: 500; text-align: right;">Jr Statistician</p>
+                                                    <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem; text-align: right;">Aug 2014 – Apr 2016</p>
+                                                    <p style="margin: 0.4rem 0 0 0; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5; text-align: right;">Developed statistical models and data analysis solutions. Worked on predictive analytics and business intelligence projects.</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="education-item">
-                                            <i class="fas fa-award"></i>
-                                            <div>
-                                                <h4>AWS Solutions Architect</h4>
-                                                <p>Amazon Web Services • 2023</p>
-                                            </div>
-                                        </div>
-                                        <div class="education-item">
-                                            <i class="fas fa-award"></i>
-                                            <div>
-                                                <h4>Azure Data Engineer Associate</h4>
-                                                <p>Microsoft Azure • 2022</p>
-                                            </div>
-                                        </div>
-                                        <div class="education-item">
-                                            <i class="fas fa-award"></i>
-                                            <div>
-                                                <h4>Google Cloud ML Engineer</h4>
-                                                <p>Google Cloud Platform • 2021</p>
+
+                                            <!-- Timeline Item 6 - LEFT SIDE -->
+                                            <div class="timeline-item" style="display: flex; justify-content: flex-start; position: relative; width: 100%; padding: 0 2rem;">
+                                                <div class="timeline-marker" style="position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; z-index: 10; box-shadow: 0 0 0 3px white, 0 2px 8px rgba(0, 0, 0, 0.15); font-weight: 700; font-size: 0.9rem; color: white; background: linear-gradient(135deg, #7B5C6F 0%, #4A7C59 100%);"></div>
+                                                <div class="timeline-content" style="max-width: 380px; width: 100%; padding-left: 40px;">
+                                                    <h3 style="margin: 0 0 0.2rem 0; font-weight: 700; color: var(--text-primary); font-size: 1.05rem;">Hydus <span style="color: var(--text-secondary); font-weight: 500; font-size: 0.95rem;">– Hyderabad</span></h3>
+                                                    <p style="margin: 0.1rem 0 0.3rem 0; color: var(--text-secondary); font-size: 0.95rem; font-weight: 500;">Business Development Executive</p>
+                                                    <p style="margin: 0; color: var(--text-muted); font-size: 0.9rem;">Oct 2013 – May 2014</p>
+                                                    <p style="margin: 0.4rem 0 0 0; color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5;">Spearheaded business development initiatives and client relationship management. Drove business growth strategies.</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -585,44 +653,6 @@
             </div>
         </section>
 
-        <!-- Blog Section -->
-        <section id="blog" class="tab-content">
-            <div class="container">
-                <div class="section-header">
-                    <h1>Blog & Articles</h1>
-                    <p>Insights, tutorials, and thought leadership in Data & AI/ML</p>
-                </div>
-                <div class="blog-grid">
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <div class="blog-content">
-                            <h3>Article Title 1</h3>
-                            <p class="blog-excerpt">Content will be added here...</p>
-                            <div class="blog-meta">
-                                <span class="blog-date">Date: TBD</span>
-                                <span class="blog-category">AI/ML</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div class="blog-content">
-                            <h3>Article Title 2</h3>
-                            <p class="blog-excerpt">Content will be added here...</p>
-                            <div class="blog-meta">
-                                <span class="blog-date">Date: TBD</span>
-                                <span class="blog-category">Data Engineering</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
         <!-- Contact Section -->
         <section id="contact" class="tab-content">
             <div class="container">
@@ -709,36 +739,12 @@
                 <div id="resumePdfViewer" class="resume-pdf-viewer" style="display: none;">
                     <div class="pdf-viewer-header">
                         <button class="btn-close-pdf" id="closePdfViewer">
-                            <i class="fas fa-times"></i> Close
+                            <i class="fas fa-arrow-left"></i> Back to Resume
                         </button>
                     </div>
-                    <iframe id="pdfFrame" src="" class="pdf-frame"></iframe>
-                </div>
-                <div id="resumePreview" class="resume-preview">
-                    <div class="resume-section">
-                        <h3>Experience</h3>
-                        <div class="timeline-item">
-                            <h4>Tech Lead (Data, AI/ML)</h4>
-                            <p class="company">Company Name</p>
-                            <p class="duration">20XX - Present</p>
-                            <p>Content will be added here...</p>
-                        </div>
-                    </div>
-                    <div class="resume-section">
-                        <h3>Education</h3>
-                        <div class="timeline-item">
-                            <h4>Degree</h4>
-                            <p class="company">Institution</p>
-                            <p class="duration">Year</p>
-                        </div>
-                    </div>
-                    <div class="resume-section">
-                        <h3>Certifications</h3>
-                        <ul class="cert-list">
-                            <li>Certification 1</li>
-                            <li>Certification 2</li>
-                            <li>Certification 3</li>
-                        </ul>
+                    <iframe id="pdfFrame" src="" class="pdf-frame" type="application/pdf" allowfullscreen></iframe>
+                    <div style="padding: 2rem; text-align: center; color: #666;">
+                        <p id="pdfError" style="display: none; color: #d32f2f;">Unable to load PDF. Please use the Download button instead.</p>
                     </div>
                 </div>
             </div>
@@ -1324,6 +1330,73 @@
                     section.classList.toggle('active');
                 });
             });
+
+            // Resume PDF Viewer Functionality
+            const viewResumeBtn = document.getElementById('viewResume');
+            const downloadResumeBtn = document.getElementById('downloadResume');
+            const resumePdfViewer = document.getElementById('resumePdfViewer');
+            const pdfFrame = document.getElementById('pdfFrame');
+            const closePdfViewer = document.getElementById('closePdfViewer');
+            const pdfError = document.getElementById('pdfError');
+
+            // Correct relative paths for both download and view
+            const pdfDownloadPath = 'Data/documents/Infographic_Resume_Raghava.pdf';
+            const pdfViewUrl = 'Data/documents/Infographic_Resume_Raghava.pdf';
+
+            // View Resume - Display PDF on same page using iframe with FULL URL
+            if (viewResumeBtn) {
+                viewResumeBtn.addEventListener('click', function() {
+                    console.log('View Resume clicked - Loading PDF from:', pdfViewUrl);
+                    
+                    resumePdfViewer.style.display = 'flex';
+                    pdfError.style.display = 'none';
+                    
+                    // Use FULL URL for iframe (not relative path)
+                    pdfFrame.src = pdfViewUrl;
+                    console.log('Set iframe src to:', pdfViewUrl);
+                    
+                    // Scroll to PDF viewer
+                    setTimeout(() => {
+                        console.log('Scrolling to PDF viewer');
+                        resumePdfViewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                });
+            }
+
+            // Close PDF Viewer
+            if (closePdfViewer) {
+                closePdfViewer.addEventListener('click', function() {
+                    console.log('Closing PDF viewer');
+                    resumePdfViewer.style.display = 'none';
+                    pdfFrame.src = '';
+                    pdfError.style.display = 'none';
+                    
+                    // Scroll back to buttons
+                    setTimeout(() => {
+                        const buttonsSection = document.querySelector('.resume-actions');
+                        if (buttonsSection) {
+                            buttonsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }, 100);
+                });
+            }
+
+            // Download Resume - Uses relative path (works perfectly)
+            if (downloadResumeBtn) {
+                downloadResumeBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    console.log('Download Resume clicked - Downloading from:', pdfDownloadPath);
+                    const link = document.createElement('a');
+                    link.href = pdfDownloadPath;
+                    link.download = 'Raghavendra_Reddy_Resume.pdf';
+                    link.style.display = 'none';
+                    document.body.appendChild(link);
+                    link.click();
+                    setTimeout(() => {
+                        document.body.removeChild(link);
+                    }, 100);
+                });
+            }
         });
     </script>
 </body>
